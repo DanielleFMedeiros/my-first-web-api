@@ -5,11 +5,10 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import ch.qos.logback.core.joran.conditional.ElseAction;
 import dio.web.api.model.Usuario;
 
 @Repository
-public class UserRepository {
+public class UsuarioRepository {
     public void save(Usuario usuario){
         if(usuario.getId()==null)
             System.out.println("SAVE - Recebendo o usuário na camada de repositório");
